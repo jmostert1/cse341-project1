@@ -7,4 +7,6 @@ router.get('/', (req, res) => {
 });
 
 
+router.use('/contacts', require('./contacts'));
+
 module.exports = router;
