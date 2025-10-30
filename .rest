@@ -1,0 +1,13 @@
+### Get all contacts
+GET https://cse341-project1-6rmg.onrender.com/contacts/
+
+### Get contact by ID
+GET https://cse341-project1-6rmg.onrender.com/contacts/6483ce023f46080356e8c6d8
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane.smith@example.com",
+  "favoriteColor": "Purple",
+  "birthday": "1992-07-20"
+}
