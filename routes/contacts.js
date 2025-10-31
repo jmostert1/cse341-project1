@@ -9,3 +9,5 @@ router.get('/', constactsController.getAll);
 router.get('/:id', constactsController.getSingle);
 
 module.exports = router;
+
+//controls our routes
