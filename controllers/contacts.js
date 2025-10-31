@@ -1,6 +1,8 @@
 const mongodb = require('../data/database');
 const ObjectId = require('mongodb').ObjectId;
 
+
+//functions for getting all contacts and a single contact by ID
 const getAll = async (req, res) => {   
     const result = await mongodb.getDatabase().db().collection('contacts').find();
     result.toArray().then((contacts) => {
