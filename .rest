@@ -29,3 +29,7 @@ Content-Type: application/json
 
 ### DELETE a contact
 DELETE https://cse341-project1-6rmg.onrender.com/contacts/6483ce023f46080356e8c6d8
+
+
+### Swagger API Documentation
+GET https://cse341-project1-6rmg.onrender.com/api-docs/
