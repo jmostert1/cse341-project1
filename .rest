@@ -4,10 +4,28 @@ GET https://cse341-project1-6rmg.onrender.com/contacts/
 ### Get contact by ID
 GET https://cse341-project1-6rmg.onrender.com/contacts/6483ce023f46080356e8c6d8
 
+### Create a new contact
+
+POST https://cse341-project1-6rmg.onrender.com/contacts/ HTTP/1.1
+Content-Type: application/json
 {
-  "firstName": "Jane",
-  "lastName": "Smith",
-  "email": "jane.smith@example.com",
-  "favoriteColor": "Purple",
-  "birthday": "1992-07-20"
+  "firstName": "Test",
+  "lastName": "Test",
+  "email": "test.test@example.com",
+  "favoriteColor": "Green",
+  "birthday": "1805-12-23"
 }
+
+### PUT a contact
+PUT https://cse341-project1-6rmg.onrender.com/contacts/6483ce023f46080356e8c6d8 HTTP/1.1
+Content-Type: application/json
+{
+  "firstName": "Test",
+  "lastName": "Test",
+  "email": "test.test@example.com",
+  "favoriteColor": "Green",
+  "birthday": "1805-12-23"
+}
+
+### DELETE a contact
+DELETE https://cse341-project1-6rmg.onrender.com/contacts/6483ce023f46080356e8c6d8
