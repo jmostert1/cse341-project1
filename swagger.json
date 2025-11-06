@@ -9,15 +9,15 @@
   "basePath": "/",
   "schemes": [
     "https"
-  
   ],
   "paths": {
-    "/": {
+    "/contacts": {
       "get": {
         "tags": [
           "Contacts"
         ],
-        "description": "",
+        "summary": "Get all contacts",
+        "description": "Retrieve all contacts from the database",
         "produces": [
           "application/json"
         ],
@@ -31,7 +31,8 @@
         "tags": [
           "Contacts"
         ],
-        "description": "",
+        "summary": "Create a new contact",
+        "description": "Add a new contact to the database",
         "parameters": [
           {
             "name": "body",
@@ -59,8 +60,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "201": {
+            "description": "Created"
           },
           "500": {
             "description": "Internal Server Error"
@@ -68,12 +69,13 @@
         }
       }
     },
-    "/{id}": {
+    "/contacts/{id}": {
       "get": {
         "tags": [
           "Contacts"
         ],
-        "description": "",
+        "summary": "Get contact by ID",
+        "description": "Retrieve a single contact by ID",
         "produces": [
           "application/json"
         ],
@@ -95,7 +97,8 @@
         "tags": [
           "Contacts"
         ],
-        "description": "",
+        "summary": "Update contact by ID",
+        "description": "Update an existing contact",
         "parameters": [
           {
             "name": "id",
@@ -141,7 +144,8 @@
         "tags": [
           "Contacts"
         ],
-        "description": "",
+        "summary": "Delete contact by ID",
+        "description": "Remove a contact from the database",
         "parameters": [
           {
             "name": "id",
